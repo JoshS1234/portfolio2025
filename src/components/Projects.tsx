@@ -1,5 +1,7 @@
-import React from 'react';
-import './Projects.css';
+import React from "react";
+import "./Projects.css";
+import brewdogImage from "../Assets/Images/BrewDog-Tile.png";
+import img2048 from "../Assets/Images/2048.jpeg";
 
 interface Project {
   title: string;
@@ -13,25 +15,38 @@ interface Project {
 const Projects: React.FC = () => {
   const projects: Project[] = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce platform with payment integration, user authentication, and admin dashboard.',
-      technologies: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'Stripe'],
-      github: 'https://github.com',
-      demo: 'https://demo.com',
+      title: "Brewdog beer recommendation website",
+      description:
+        "A react website that provides information on brewdog beers and can filter based on various parameters, there is also a beer sommelier to recommend beer to go with specific foods (You can use a mock email/password for the login).",
+      technologies: [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Axios",
+        "SCSS",
+        "Firebase (Authentication)",
+        "Github",
+      ],
+      github: "https://github.com/JoshS1234/punk-api",
+      demo: "https://joshs1234.github.io/punk-api/#/",
+      image: brewdogImage,
     },
     {
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates and team collaboration features.',
-      technologies: ['React', 'TypeScript', 'Firebase', 'Material-UI'],
-      github: 'https://github.com',
-      demo: 'https://demo.com',
+      title: "2048 Game",
+      description:
+        "I created this browser-based game fairly early in _nology bootcamp to practice TypeScript, SCSS, and HTML.",
+      technologies: ["HTML", "TypeScript", "SCSS", "Github"],
+      github: "https://github.com/JoshS1234/game2048",
+      demo: "https://joshs1234.github.io/game2048/index.html",
+      image: img2048,
     },
     {
-      title: 'Weather Dashboard',
-      description: 'A responsive weather dashboard that displays current conditions and forecasts using weather APIs.',
-      technologies: ['React', 'TypeScript', 'OpenWeather API', 'Chart.js'],
-      github: 'https://github.com',
-      demo: 'https://demo.com',
+      title: "Java poker game simulator",
+      description:
+        "This was a pair project that I completed during the _nology bootcamp. It runs in the command line and simulates 2 games (Poker and Snap). I wrote the code for Poker, and my teammate wrote the code for Snap.",
+      technologies: ["Java", "Pair-programming", "Github"],
+      github: "https://github.com",
+      demo: "https://demo.com",
     },
   ];
 
@@ -44,7 +59,11 @@ const Projects: React.FC = () => {
             <div key={index} className="project-card">
               <div className="project-image">
                 <div className="project-placeholder">
-                  <span>Project Image</span>
+                  {project.image ? (
+                    <img src={project.image} alt={project.title} />
+                  ) : (
+                    <span>Project Image</span>
+                  )}
                 </div>
               </div>
               <div className="project-content">
@@ -52,17 +71,29 @@ const Projects: React.FC = () => {
                 <p>{project.description}</p>
                 <div className="project-technologies">
                   {project.technologies.map((tech, i) => (
-                    <span key={i} className="tech-tag">{tech}</span>
+                    <span key={i} className="tech-tag">
+                      {tech}
+                    </span>
                   ))}
                 </div>
                 <div className="project-links">
                   {project.github && (
-                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn-link">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-link"
+                    >
                       GitHub
                     </a>
                   )}
                   {project.demo && (
-                    <a href={project.demo} target="_blank" rel="noopener noreferrer" className="btn-link">
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-link"
+                    >
                       Live Demo
                     </a>
                   )}
@@ -77,4 +108,3 @@ const Projects: React.FC = () => {
 };
 
 export default Projects;
-

@@ -1,5 +1,5 @@
-import React from 'react';
-import './Experience.css';
+import React from "react";
+import "./Experience.css";
 
 interface ExperienceItem {
   title: string;
@@ -12,26 +12,46 @@ interface ExperienceItem {
 const Experience: React.FC = () => {
   const experiences: ExperienceItem[] = [
     {
-      title: 'Senior Software Engineer',
-      company: 'Tech Company',
-      period: '2022 - Present',
+      title: "Senior Custom Software Java Developer",
+      company: "Tech Company",
+      period: "2026 - Present",
       description: [
-        'Led development of scalable web applications using React and TypeScript',
-        'Collaborated with cross-functional teams to deliver high-quality software',
-        'Mentored junior developers and conducted code reviews',
+        "Using Java 11 and Spring to maintain the self-assessment tax website",
+        "Monitoring microservices with Kibana, Grafana and PagerDuty",
+        "Completing proof of concepts for new functionality, and documenting the process",
+        "Conducting code reviews and provinding guidance to new team members",
       ],
-      technologies: ['React', 'TypeScript', 'Node.js', 'AWS'],
+      technologies: [
+        "Java",
+        "Spring",
+        "Kibana",
+        "Grafana",
+        "PagerDuty",
+        "Docker",
+        "Git",
+        "Confluence",
+        "HTML",
+      ],
     },
     {
-      title: 'Software Engineer',
-      company: 'Startup Inc',
-      period: '2020 - 2022',
+      title: "Java Developer",
+      company: "_Nology (Client placement: Accenture)",
+      period: "2024 - 2026",
       description: [
-        'Developed and maintained full-stack applications',
-        'Implemented CI/CD pipelines for automated deployments',
-        'Optimized application performance and reduced load times by 40%',
+        "Completed the 12 week _Nology bootcamp, learning TypeScript, Java and React",
+        "Completed a further 4 week Scala upskilling crash-course",
+        "Managed a client project during training, which involved me leading the team and conducting code reviews",
+        "Completed full-stack individual projects in a short timeframe",
       ],
-      technologies: ['JavaScript', 'Python', 'Docker', 'Kubernetes'],
+      technologies: [
+        "JavaScript",
+        "TypeScript",
+        "Java",
+        "Scala",
+        "Firebase",
+        "Git",
+        "SCSS",
+      ],
     },
   ];
 
@@ -54,7 +74,9 @@ const Experience: React.FC = () => {
                 </ul>
                 <div className="experience-technologies">
                   {exp.technologies.map((tech, i) => (
-                    <span key={i} className="tech-tag">{tech}</span>
+                    <span key={i} className="tech-tag">
+                      {tech}
+                    </span>
                   ))}
                 </div>
               </div>
@@ -67,4 +89,3 @@ const Experience: React.FC = () => {
 };
 
 export default Experience;
-

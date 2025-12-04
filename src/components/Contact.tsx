@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
-import './Contact.css';
+import React, { useState } from "react";
+import "./Contact.css";
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -18,9 +20,9 @@ const Contact: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission here
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! I will get back to you soon.');
-    setFormData({ name: '', email: '', message: '' });
+    console.log("Form submitted:", formData);
+    alert("Thank you for your message! I will get back to you soon.");
+    setFormData({ name: "", email: "", message: "" });
   };
 
   return (
@@ -31,19 +33,32 @@ const Contact: React.FC = () => {
           <div className="contact-info">
             <h3>Let's Connect</h3>
             <p>
-              I'm always open to discussing new projects, creative ideas, or opportunities 
-              to be part of your visions. Feel free to reach out!
+              I'm always open to discussing new projects, creative ideas, or
+              opportunities to be part of your visions. Feel free to reach out!
             </p>
             <div className="contact-links">
-              <a href="mailto:your.email@example.com" className="contact-link">
+              <a
+                href="mailto:joshua.spence@hotmail.co.uk"
+                className="contact-link"
+              >
                 <span className="contact-icon">✉</span>
-                your.email@example.com
+                joshua.spence@hotmail.co.uk
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="contact-link">
+              <a
+                href="www.linkedin.com/in/josh-s-spence"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-link"
+              >
                 <span className="contact-icon">💼</span>
                 LinkedIn
               </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="contact-link">
+              <a
+                href="https://github.com/JoshS1234"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-link"
+              >
                 <span className="contact-icon">🔗</span>
                 GitHub
               </a>
@@ -80,7 +95,9 @@ const Contact: React.FC = () => {
                 required
               ></textarea>
             </div>
-            <button type="submit" className="btn btn-primary">Send Message</button>
+            <button type="submit" className="btn btn-primary">
+              Send Message
+            </button>
           </form>
         </div>
       </div>
@@ -89,4 +106,3 @@ const Contact: React.FC = () => {
 };
 
 export default Contact;
-

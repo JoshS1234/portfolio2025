@@ -1,5 +1,5 @@
-import React from 'react';
-import './Footer.css';
+import React from "react";
+import "./Footer.css";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -8,11 +8,22 @@ const Footer: React.FC = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
-          <p>&copy; {currentYear} Your Name. All rights reserved.</p>
+          <p>&copy; {currentYear} Joshua Spence. All rights reserved.</p>
           <div className="footer-links">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a
+              href="https://github.com/JoshS1234"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+            <a
+              href="www.linkedin.com/in/josh-s-spence"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
           </div>
         </div>
       </div>
@@ -21,4 +32,3 @@ const Footer: React.FC = () => {
 };
 
 export default Footer;
-
