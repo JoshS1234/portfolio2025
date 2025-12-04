@@ -2,6 +2,7 @@ import React from "react";
 import "./Projects.css";
 import brewdogImage from "../Assets/Images/BrewDog-Tile.png";
 import img2048 from "../Assets/Images/2048.jpeg";
+import javaPoker from "../Assets/Images/poker.png";
 
 interface Project {
   title: string;
@@ -43,10 +44,10 @@ const Projects: React.FC = () => {
     {
       title: "Java poker game simulator",
       description:
-        "This was a pair project that I completed during the _nology bootcamp. It runs in the command line and simulates 2 games (Poker and Snap). I wrote the code for Poker, and my teammate wrote the code for Snap.",
+        "This was a pair project that I completed during the _nology bootcamp. It runs in the command line and simulates 2 games (Poker and Snap). I wrote the code for Poker and the ASCII art, and my teammate wrote the code for Snap.",
       technologies: ["Java", "Pair-programming", "Github"],
-      github: "https://github.com",
-      demo: "https://demo.com",
+      github: "https://github.com/JoshS1234/CardGamePairProject#",
+      image: javaPoker,
     },
   ];
 
