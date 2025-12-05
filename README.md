@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Portfolio 2025
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website built with React and TypeScript, showcasing my software engineering projects, skills, and experience.
 
-## Available Scripts
+## 🌟 Features
 
-In the project directory, you can run:
+- **Responsive Design**: Fully responsive layout that works seamlessly across desktop, tablet, and mobile devices
+- **Interactive Background Effects**: Scroll-based parallax animations with floating elements and particles
+- **Modern UI**: Clean design with glassmorphism effects and smooth animations
+- **Contact Form**: Integrated Formspree contact form for direct communication
+- **Project Showcase**: Display of featured projects with images, descriptions, and live demos
+- **Skills Rating System**: Visual 5-star rating system for technical skills
+- **Experience Timeline**: Professional experience displayed in an elegant timeline format
 
-### `npm start`
+## 📋 Sections
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Header**: Fixed navigation bar with smooth scrolling to sections
+2. **About**: Personal introduction with profile photo
+3. **Skills**: Technical skills organized by category with star ratings
+4. **Experience**: Professional work history with timeline visualization
+5. **Projects**: Featured projects with images, technologies, and links
+6. **Contact**: Contact form and social media links
+7. **Footer**: Additional links and copyright information
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Technologies Used
 
-### `npm test`
+### Core
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React 19.2.0**: JavaScript library for building user interfaces
+- **TypeScript**: Typed superset of JavaScript for better developer experience
+- **React Scripts 5.0.1**: Configuration and scripts for Create React App
 
-### `npm run build`
+### Styling
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **CSS3**: Modern CSS with flexbox, grid, and animations
+- **Backdrop Filter**: Glassmorphism effects
+- **CSS Animations**: Smooth transitions and scroll-based effects
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Form Handling
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Formspree React**: Contact form integration for email submissions
 
-### `npm run eject`
+### Testing
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **React Testing Library**: Testing utilities for React components
+- **Jest**: JavaScript testing framework
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📝 License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This project is open source and available for personal use.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 👤 Contact
 
-## Learn More
+Josh Spence
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Email: joshua.spence@hotmail.co.uk
+- LinkedIn: [josh-s-spence](https://www.linkedin.com/in/josh-s-spence)
+- GitHub: [JoshS1234](https://github.com/JoshS1234)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🙏 Acknowledgments
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Background effects inspiration from modern web design trends
+- React and TypeScript communities for excellent documentation
+- Formspree for easy contact form integration
