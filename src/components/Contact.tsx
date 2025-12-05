@@ -1,30 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Contact.css";
+import { useForm, ValidationError } from "@formspree/react";
 
 const Contact: React.FC = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const formspreeEndpoint = process.env.REACT_APP_FORMSPREE_ENDPOINT;
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
-    alert("Thank you for your message! I will get back to you soon.");
-    setFormData({ name: "", email: "", message: "" });
-  };
-
+  const [state, handleSubmit] = useForm(
+    formspreeEndpoint ? formspreeEndpoint : "temp_placeholder"
+  );
   return (
     <section id="contact" className="contact">
       <div className="container">
@@ -66,13 +49,11 @@ const Contact: React.FC = () => {
           </div>
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-group">
-              <input
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                value={formData.name}
-                onChange={handleChange}
-                required
+              <input type="text" name="name" placeholder="Your Name" required />
+              <ValidationError
+                prefix="Name"
+                field="name"
+                errors={state.errors}
               />
             </div>
             <div className="form-group">
@@ -80,9 +61,12 @@ const Contact: React.FC = () => {
                 type="email"
                 name="email"
                 placeholder="Your Email"
-                value={formData.email}
-                onChange={handleChange}
                 required
+              />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
               />
             </div>
             <div className="form-group">
@@ -90,14 +74,26 @@ const Contact: React.FC = () => {
                 name="message"
                 placeholder="Your Message"
                 rows={6}
-                value={formData.message}
-                onChange={handleChange}
                 required
               ></textarea>
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
+              />
             </div>
-            <button type="submit" className="btn btn-primary">
-              Send Message
+            <button
+              type="submit"
+              className="btn btn-primary"
+              disabled={state.submitting}
+            >
+              {state.submitting ? "Sending..." : "Send Message"}
             </button>
+            {state.succeeded && (
+              <p style={{ color: "white", marginTop: "1rem" }}>
+                Thank you for your message! I will get back to you soon.
+              </p>
+            )}
           </form>
         </div>
       </div>
