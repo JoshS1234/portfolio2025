@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio2025/static/css/main.7d958ded.css",
-    "main.js": "/portfolio2025/static/js/main.c7d2f875.js",
+    "main.css": "/portfolio2025/static/css/main.4f70d72f.css",
+    "main.js": "/portfolio2025/static/js/main.fce60feb.js",
     "static/js/453.d7e3fa77.chunk.js": "/portfolio2025/static/js/453.d7e3fa77.chunk.js",
     "static/media/BrewDog-Tile.png": "/portfolio2025/static/media/BrewDog-Tile.ba89d30abaeae572f33d.png",
     "static/media/JoshSpence.jpeg": "/portfolio2025/static/media/JoshSpence.a6c4d5e55dbe41785f63.jpeg",
     "static/media/poker.png": "/portfolio2025/static/media/poker.4e852d51a1a64c1665dc.png",
     "index.html": "/portfolio2025/index.html",
-    "main.7d958ded.css.map": "/portfolio2025/static/css/main.7d958ded.css.map",
-    "main.c7d2f875.js.map": "/portfolio2025/static/js/main.c7d2f875.js.map",
+    "main.4f70d72f.css.map": "/portfolio2025/static/css/main.4f70d72f.css.map",
+    "main.fce60feb.js.map": "/portfolio2025/static/js/main.fce60feb.js.map",
     "453.d7e3fa77.chunk.js.map": "/portfolio2025/static/js/453.d7e3fa77.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d958ded.css",
-    "static/js/main.c7d2f875.js"
+    "static/css/main.4f70d72f.css",
+    "static/js/main.fce60feb.js"
   ]
 }
