@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
                 joshua.spence@hotmail.co.uk
               </a>
               <a
-                href="www.linkedin.com/in/josh-s-spence"
+                href="https://www.linkedin.com/in/josh-s-spence"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact-link"
